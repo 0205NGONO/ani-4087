@@ -84,3 +84,18 @@ int main() {
 
     return 0;
 }
+
+
+
+### Résultats pour un point :
+Position de la pose (x y z) : 2 5 8 
+Quaternion de la pose (x y z t) :  8 9  5 7
+Point ├á transformer (x y z) : 5 6 8 7 
+Rotation puis translation : 2129.0000 1145.0000 422.0000
+Translation puis rotation : 4159.0000 1597.0000 764.0000
+
+### Point et pose pour lesquels les résultats sont identiques
+-- Une pose de position nulle (0, 0, 0) : Ici, la translation n'existe plus, et le résultat se résume à orientation.v
+-- Une pose d'arientation 90° autour de y, soit (0.7071 0 0.7071)
+-- C'est la pose seule qui décide de la coincidence, le point n'a pas vraiment d'influence dessus.
+
