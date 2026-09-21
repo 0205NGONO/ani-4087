@@ -1,3 +1,9 @@
+## Adresses des fichiers : 
+https://github.com/0205NGONO/ani-4087/blob/main/chapitre-02/exo1-le_projet_minimal/projet.cpp
+
+
+
+## Sortie de jenga build
 C:\Users\DELL\Desktop\Projet\projet> jenga build
 
 ╔══════════════════════════════════════════════════════════════════╗
