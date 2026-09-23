@@ -1,6 +1,7 @@
 Liens des fichiers :
 https://github.com/0205NGONO/ani-4087/blob/main/chapitre-02/exo5-le_define_qui_manque/module.hpp
 https://github.com/0205NGONO/ani-4087/blob/main/chapitre-02/exo5-le_define_qui_manque/module.cpp
+https://github.com/0205NGONO/ani-4087/blob/main/chapitre-02/exo5-le_define_qui_manque/main.cpp
 
 ## Message 1 — compilé avec le define (`g++ -DMODULE_ACTIF -o programme main.cpp module.cpp`)
 
