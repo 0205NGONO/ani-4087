@@ -1,4 +1,5 @@
 Voici le lien du projet : 
+https://github.com/0205NGONO/ani-4087/blob/main/chapitre-02/exo6-le_filtre_qui_ne_s_active_jamais/projet_filtre.zip
 
 ## Démarche :
 
