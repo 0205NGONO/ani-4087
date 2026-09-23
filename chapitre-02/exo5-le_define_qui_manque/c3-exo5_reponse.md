@@ -9,6 +9,11 @@ int main() {
     return 0;
 }
 
+// module.cpp
+#include "module.hpp"
+int MaClasse::ObtenirValeur() const { return valeur; }
+void MaClasse::DefinirValeur(int v) { valeur = v; }
+
 
 
 ## Message 1 — compilé avec le define (`g++ -DMODULE_ACTIF -o programme main.cpp module.cpp`)
