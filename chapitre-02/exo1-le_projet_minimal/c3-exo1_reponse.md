@@ -1,6 +1,5 @@
-## Adresses des fichiers : 
-https://github.com/0205NGONO/ani-4087/blob/main/chapitre-02/exo1-le_projet_minimal/projet.cpp
-https://github.com/0205NGONO/ani-4087/blob/main/chapitre-02/exo1-le_projet_minimal/projet.jenga
+## Adresses du projet : 
+https://github.com/0205NGONO/ani-4087/blob/main/chapitre-02/exo1-le_projet_minimal/projet_minimal.zip
 
 
 ## Sortie de jenga build
