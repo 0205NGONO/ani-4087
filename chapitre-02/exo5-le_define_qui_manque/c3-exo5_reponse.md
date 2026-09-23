@@ -14,6 +14,7 @@ int main() {
 int MaClasse::ObtenirValeur() const { return valeur; }
 void MaClasse::DefinirValeur(int v) { valeur = v; }
 
+// module.hpp
 #ifndef MODULE_HPP
 #define MODULE_HPP
 
