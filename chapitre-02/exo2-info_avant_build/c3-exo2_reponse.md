@@ -54,4 +54,4 @@ Le fichier de projet précise les configurations, la plateforme et l'architectur
 
 Une de ces cinq toolchains, `clang-cross-linux`, cible Linux — alors que le projet ne vise que Windows. Cela montre que ma machine dispose d'un compilateur capable de croiser vers un autre système, une capacité de l'environnement de développement que le fichier de projet ne mentionne à aucun moment, puisqu'il ne décrit que ce que le projet cible, pas ce que la machine est capable de construire.
 
-Aussi, le statut du projet est "Not running", donc il n'est pas en cours d'exécution.
+Aussi, le statut du Daemon est "Not running", donc aucune instance de ce processus n'est en cours d'exécution sur la machine, et Jenga fonctionne très bien sans celà.
