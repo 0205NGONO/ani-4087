@@ -1,5 +1,9 @@
-## Adresses du projet : 
-https://github.com/0205NGONO/ani-4087/blob/main/chapitre-02/exo1-le_projet_minimal/projet_minimal.zip
+// main.cpp
+#include <iostream>
+
+int main() {
+    return 0;
+}
 
 
 ## Sortie de jenga build
