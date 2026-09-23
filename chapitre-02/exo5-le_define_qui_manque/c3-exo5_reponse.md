@@ -1,7 +1,15 @@
-Liens des fichiers :
-https://github.com/0205NGONO/ani-4087/blob/main/chapitre-02/exo5-le_define_qui_manque/module.hpp
-https://github.com/0205NGONO/ani-4087/blob/main/chapitre-02/exo5-le_define_qui_manque/module.cpp
-https://github.com/0205NGONO/ani-4087/blob/main/chapitre-02/exo5-le_define_qui_manque/main.cpp
+// main.cpp
+#include <iostream>
+#include "module.hpp"
+
+int main() {
+    MaClasse objet;
+    objet.DefinirValeur(42);
+    std::cout << objet.ObtenirValeur() << "\n";
+    return 0;
+}
+
+
 
 ## Message 1 — compilé avec le define (`g++ -DMODULE_ACTIF -o programme main.cpp module.cpp`)
 
