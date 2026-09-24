@@ -46,7 +46,7 @@ Daemon
 Status: Not running
 ```
 
-En changeant uniquement `"system:Windows"` en `"system:Android"` (condition fausse — aucune 
+## En changeant uniquement `"system:Windows"` en `"system:Android"` (condition fausse — aucune 
 cible Android n'est déclarée dans `targetoses`) :
 ```
 =========================== Jenga Workspace: projet2 ===========================
