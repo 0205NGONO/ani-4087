@@ -86,7 +86,7 @@ Les deux sorties sont rigoureusement identiques, caractère près — aucune men
 `ANDROID_BUILD`, `com.rihen.projet2` ni des paramètres de SDK Android, dans un cas comme dans l'autre. 
 `jenga info` ne révèle donc jamais le contenu d'un bloc `filter`, que sa condition soit vraie ou fausse.
 
-**Seconde moitié — comment vérifier réellement que le filtre s'active**
+## Seconde moitié — comment vérifier réellement que le filtre s'active
 
 En lançant une commande qui prend explicitement `--platform android`, comme `jenga build --platform android`
 ou `jenga package --platform android` : si le filtre est actif, ses définitions et bibliothèques doivent 
