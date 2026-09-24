@@ -1,3 +1,141 @@
 ## Les fichiers :
 // main.cpp : https://github.com/0205NGONO/ani-4087/blob/main/chapitre-02/exo8-deux_systemes_un_fichier/src/main.cpp
-// projet2.jenga : 
+// projet2.jenga : https://github.com/0205NGONO/ani-4087/blob/main/chapitre-02/exo8-deux_systemes_un_fichier/projet2.jenga
+
+Voici le texte final, prêt à remettre avec `projet2.jenga` et `main.cpp` (joints à part).
+
+---
+
+# Filtres multi-plateformes (Windows / Linux) — vérification croisée
+
+## Fichier de projet
+
+Le fichier `projet2.jenga` déclare les deux systèmes cibles du workspace (`TargetOS.WINDOWS` et `TargetOS.LINUX`) et définit un filtre distinct pour chacun, avec ses propres bibliothèques liées :
+
+- **Windows** (`system:Windows`) : `kernel32`, `user32`, `gdi32`
+- **Linux** (`system:Linux`) : `pthread`, `dl`
+
+Les deux filtres définissent également `MODULE_ACTIF`, et `main.cpp` affiche la plateforme détectée à la compilation, pour rendre la preuve visible dans la sortie du programme.
+
+## Vérification de mon côté (Windows)
+
+```
+jenga clean
+>> jenga build --verbose
+
+╔══════════════════════════════════════════════════════════════════╗
+║                                                                  ║
+║                ██╗███████╗███╗   ██╗ ██████╗  █████╗             ║
+║                ██║██╔════╝████╗  ██║██╔════╝ ██╔══██╗            ║
+║                ██║█████╗  ██╔██╗ ██║██║  ███╗███████║            ║
+║           ██   ██║██╔══╝  ██║╚██╗██║██║   ██║██╔══██║            ║
+║           ╚█████╔╝███████╗██║ ╚████║╚██████╔╝██║  ██║            ║
+║            ╚════╝ ╚══════╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝            ║
+║                                                                  ║
+║             Multi-platform C/C++ Build System v2.6.3             ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
+
+Removed C:\Users\DELL\Desktop\Projet\projet2\Build\Obj\Debug-Windows\projet2\src_main.obj
+Removed C:\Users\DELL\Desktop\Projet\projet2\Build\Bin\Debug-Windows\projet2\projet2.exe
+
+╔══════════════════════════════════════════════════════════════════╗
+║                                                                  ║
+║                ██╗███████╗███╗   ██╗ ██████╗  █████╗             ║
+║                ██║██╔════╝████╗  ██║██╔════╝ ██╔══██╗            ║
+║                ██║█████╗  ██╔██╗ ██║██║  ███╗███████║            ║
+║           ██   ██║██╔══╝  ██║╚██╗██║██║   ██║██╔══██║            ║
+║           ╚█████╔╝███████╗██║ ╚████║╚██████╔╝██║  ██║            ║
+║            ╚════╝ ╚══════╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝            ║
+║                                                                  ║
+║             Multi-platform C/C++ Build System v2.6.3             ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
+
+Loading workspace...
+[Loader] Loading workspace from C:\Users\DELL\Desktop\Projet\projet2\projet2.jenga
+[Loader] Workspace 'projet2' post-processed.
+
+Configuration: Debug
+Target:        Windows x86_64
+Toolchain:     clang-mingw
+
+Build Order (1 projects):
+  1. projet2 [CONSOLE_APP]
+
+
+╔══════════════════════════════════════════════════════════════════════════════════════════════╗
+║  Project: projet2                                                         Kind: CONSOLE_APP  ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════╝
+
+ℹ Found 1 source file(s)
+✓   [1/1] Compiled: main.cpp
+[Link:Clang:projet2] D:\msys64\ucrt64\bin\clang++.EXE -o C:\Users\DELL\Desktop\Projet\projet2\Build\Bin\Debug-Windows\projet2\projet2.exe C:\Users\DELL\Desktop\Projet\projet2\Build\Obj\Debug-Windows\projet2\src_main.obj -Wl,--start-group -lkernel32 -luser32 -lgdi32 -Wl,--end-group
+ℹ Linking...
+✓ Built: Build\Bin\Debug-Windows\projet2\projet2.exe
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────┐
+│  ✓ Build Successful                                                             Time: 0.57s  │
+└──────────────────────────────────────────────────────────────────────────────────────────────┘
+
+════════════════════════════════════════════════════════════════════════════════
+                                BUILD COMPLETED                                 
+════════════════════════════════════════════════════════════════════════════════
+Projects Built:  1/1
+Time:           0.57s
+Status:         ✓ SUCCESS
+════════════════════════════════════════════════════════════════════════════════
+```
+
+### Après `jenga clean` puis `jenga build --verbose`, le build a réussi et la ligne de link confirme que les bonnes bibliothèques Windows ont bien été passées au linker :
+
+```
+-lkernel32 -luser32 -lgdi32
+```
+
+L'exécutable généré (`Build\Bin\Debug-Windows\projet2\projet2.exe`) affiche, une fois exécuté :
+```
+Get-ChildItem -Recurse -Filter *.exe
+
+
+    Répertoire : C:\Users\DELL\Desktop\Projet\projet2\Build\Bin\Debug-Windows\projet2
+
+
+Mode                 LastWriteTime         Length Name                                   
+----                 -------------         ------ ----                                   
+-a----        24/09/2026     05:02          51032 projet2.exe                            
+
+
+PS C:\Users\DELL\Desktop\Projet\projet2> .\Build\Bin\Debug-Windows\projet2\projet2.exe
+Definition recue : MODULE_ACTIF est actif
+Plateforme detectee : Windows
+```
+
+Cela confirme que le filtre `system:Windows` est correctement appliqué : à la fois la définition (`MODULE_ACTIF`) et les bibliothèques (`kernel32`, `user32`, `gdi32`) sont bien liées uniquement pour cette plateforme.
+
+## Vérification côté Linux
+
+Je n'ai accès qu'à un environnement Windows et je n'ai pas pu faire tester le projet par un camarade sur une machine Linux. Le filtre `system:Linux` a été écrit selon la même logique que celui de Windows, avec des bibliothèques système usuelles pour cette plateforme (`pthread` pour le threading POSIX, `dl` pour le chargement dynamique), mais sa compilation effective **n'a pas pu être vérifiée expérimentalement**.
+
+Ce qui reste donc non confirmé :
+- que `jenga build` fonctionne sans erreur sous Linux avec ce fichier tel quel
+- que le linker Linux (`gcc`/`clang`) accepte bien `pthread` et `dl` dans ce contexte Jenga
+- que le binaire produit affiche correctement `Plateforme detectee : Linux`
+
+Si l'occasion se présente plus tard de faire tester ce projet par quelqu'un sous Linux, je compléterai cette section avec la sortie réelle obtenue.
+
+Étapes pour vérification sous Linux : 
+
+1. Récupère ce dossier tel quel (ne modifie rien dans projet2.jenga ni main.cpp).
+2. Ouvre un terminal à la racine du dossier.
+3. Lance :
+   jenga clean
+   jenga build --verbose
+4. Une fois le build terminé, trouve l'exécutable généré :
+   - Sous Linux, il devrait se trouver dans quelque chose comme :
+     ./Build/Bin/Debug-Linux/projet2/projet2
+5. Exécute-le et note la sortie exacte.
+6. Renvoie-moi :
+   - la sortie complète de "jenga build --verbose"
+   - la sortie du programme exécuté
+   - la confirmation que tu n'as RIEN modifié dans les fichiers
