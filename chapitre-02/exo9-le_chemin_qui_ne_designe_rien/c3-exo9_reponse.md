@@ -1,6 +1,6 @@
 # Motif de fichiers invalide et dossier d'include inexistant
 
-Modification apportée à projet2.jenga ()
+Modification apportée à projet2.jenga (https://github.com/0205NGONO/ani-4087/blob/main/chapitre-02/exo9-le_chemin_qui_ne_designe_rien/projet2.jenga)
 python
 files(["src/**.cpp", "src/**.inexistant_xyz"])
 includedirs(["include_qui_n_existe_pas"])
