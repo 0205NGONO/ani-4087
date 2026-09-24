@@ -1,4 +1,4 @@
-## Filtre ajouté à `projet2.jenga` :
+## Filtre ajouté à `projet2.jenga` (https://github.com/0205NGONO/ani-4087/blob/main/chapitre-02/chapitre-02/exo14-le_filtre_android/projet2.jenga) :
 ```
 with filter("system:Windows"):
     defines(["MODULE_ACTIF", "ANDROID_BUILD"])
