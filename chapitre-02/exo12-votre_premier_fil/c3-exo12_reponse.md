@@ -1,4 +1,4 @@
-Voici le fichier `projet2.jenga` final, tel qu'il tourne actuellement sur ta machine, prêt à être rendu.
+// projet2.jenga
 
 ```python
 from Jenga import *
@@ -22,9 +22,6 @@ with workspace("projet"):
             defines(["MODULE_ACTIF"])
             links(["pthread", "dl"])
 
-        # ===== Feuille de route du parcours =====
-        # Une ligne par sprint : ce qu'il faudra ajouter à ce fichier.
-        # Décocher [ ] -> [x] au fur et à mesure, en ajoutant le vrai code.
 
         # [x] Sprint 1 - Deux yeux, deux images ; le repère, la pose et le mètre (44/56 taches, quasi termine) : ce sprint pose les bases mathematiques (reperes, pose, unite de mesure) avant tout code Jenga - pas de changement direct
 attendu dans ce fichier de projet, sauf si des fichiers sources ou includes lies a ce module sont ajoutes.
@@ -56,7 +53,7 @@ terrain d'exercice ; pas de nouvelle dependance moteur a ajouter, mais approfond
             symbols(False)
 ```
 
-Preuve que ce fichier fonctionne réellement (sortie de `jenga build --verbose` sur ce fichier tel quel) :
+Preuve que ce fichier fonctionne réellement : sortie de `jenga build --verbose` :
 
 ```
 Loading workspace...
