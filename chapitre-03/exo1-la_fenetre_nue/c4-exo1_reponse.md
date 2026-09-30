@@ -320,4 +320,4 @@ Status:         ✓ SUCCESS
 
 ## Fenêtre 
 En exécutant : .\Build\Bin\Debug\Chap3\Chap3.exe,
-J'ai obtenu la fenêtre suivante : 
+J'ai obtenu la fenêtre suivante : https://github.com/0205NGONO/ani-4087/blob/main/chapitre-03/exo1-la_fenetre_nue/salle.png
