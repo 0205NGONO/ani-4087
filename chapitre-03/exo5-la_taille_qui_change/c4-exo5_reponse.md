@@ -1,4 +1,4 @@
-## Événements de redimensionnement : lent contre d'un coup
+## Événements de redimensionnement :
 
 **Code** 
 // main.cpp
