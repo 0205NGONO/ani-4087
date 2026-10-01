@@ -109,4 +109,4 @@ La fenêtre est donc déclarée bloquée environ **6,5 secondes** après le déb
 
 ## Retour à l'état normal : `PollEvents()` a été remis dans la boucle, à chaque tour.
 
-Capture de la fenêtre bloquée : 
+Capture de la fenêtre bloquée : https://github.com/0205NGONO/ani-4087/blob/main/chapitre-03/exo2-la_fenetre_qui_ne_repond_pas/bloc1.png
