@@ -1,4 +1,4 @@
-## Souris cachée et confinée : position contre déplacement brut
+## Souris cachée et confinée :
 
 **Code** 
 // main.cpp
