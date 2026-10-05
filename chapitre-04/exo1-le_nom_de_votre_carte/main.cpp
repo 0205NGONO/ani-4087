@@ -1,6 +1,4 @@
-**main.cpp**
-
-```
+// main.cpp
 #include <iostream>
 #include <string>
 #include <vector>
@@ -86,9 +84,8 @@ int main() {
 
     return 0;
 }
-```
 
-**Étapes suivies**
+/* Étapes suivies**
 
 1. Création du dossier et du fichier :
 ```powershell
@@ -139,3 +136,4 @@ DIFFERENTES 4
 Get-Content entree.txt | .\Build\Bin\Debug-Windows\Chap4\Chap4.exe | Format-Hex | Select-Object -Last 5
 ```
 qui a confirmé que chaque ligne se termine exactement sur son dernier caractère utile, sans espace parasite.
+*/
