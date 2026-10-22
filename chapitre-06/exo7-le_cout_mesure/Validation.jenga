@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+from Jenga import *
+useconfig("..\\..\\R3D\\R3D.jenga")
+
+with workspace("Chap6Validation"):
+    configurations(["Debug"])
+    targetoses([TargetOS.WINDOWS])
+    targetarchs([TargetArch.X86_64])
+
+    for target, folder, source in [
+        ("Ex1", "..\\exo1-le_pointeur_capture", "pointeur.cpp"),
+        ("Ex2", "..\\exo2-la_derive_provoquee", "derive.cpp"),
+        ("Ex3", "..\\exo3-accumuler_puis_vider", "accumulation.cpp"),
+        ("Ex4", "..\\exo4-les_crochets_de_test", "tete.cpp"),
+        ("Ex5", "..\\exo5-les_deux_ordres_et_la_matrice", "ordres.cpp"),
+        ("Ex6", "..\\exo6-le_cone_du_mauvais_ordre", "cone.cpp"),
+        ("Ex9", "..\\exo9-les_deux_images_et_l_image_noire", "deux-yeux.cpp"),
+        ("Ex8", "..\\exo8-les_deux_poses_et_l_axe_du_monde", "poses.cpp"),
+        ("Ex10", "..\\exo10-la_projection_a_la_main", "projection.cpp"),
+    ]:
+        with project(target):
+            consoleapp()
+            language("C++")
+            cppdialect("C++17")
+            location(folder)
+            files([source])
+            cxxflags(["-stdlib=libc++"])
+            ldflags(["-stdlib=libc++", "-Wl,-Bdynamic"])
+            user3d()

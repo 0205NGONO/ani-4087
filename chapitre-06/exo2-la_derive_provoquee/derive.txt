@@ -1,0 +1,1 @@
+À générer en lançant derive.cpp : déplacer la souris vers la droite pendant environ une seconde, puis ne plus la toucher pendant dix secondes. Les cinq lignes ci-dessous doivent être copiées depuis cette exécution; aucune mesure matérielle n'a été inventée.

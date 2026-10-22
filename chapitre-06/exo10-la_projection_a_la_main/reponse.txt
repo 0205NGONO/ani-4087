@@ -1,0 +1,8 @@
+Ou vit le décentrage :
+Il vit dans mat[2][0] et mat[2][1]. Le premier translate horizontalement l'image selon l'asymétrie gauche-droite; le second la translate verticalement selon l'asymétrie haut-bas.
+
+Ce que valent ces termes en symétrique :
+Avec des angles opposés, tanRight + tanLeft et tanUp + tanDown valent zéro : les deux termes de décentrage sont donc nuls. La projection retrouve son centre.
+
+Ce que j'ai vérifié de plus :
+Les seize coefficients calculés à la main concordent avec la projection symétrique et la caméra asymétrique du moteur. ecarts.txt contient les écarts mesurés, par ligne, et leur maximum.

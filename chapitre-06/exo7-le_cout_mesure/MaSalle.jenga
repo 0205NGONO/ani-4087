@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+from Jenga import *
+useconfig("..\\..\\R3D\\R3D.jenga")
+
+with workspace("MaSalle"):
+    configurations(["Debug", "Release"])
+    targetoses([TargetOS.WINDOWS])
+    targetarchs([TargetArch.X86_64])
+
+    with project("MaSalle"):
+        consoleapp()
+        language("C++")
+        cppdialect("C++17")
+        location(".")
+        files(["cout.cpp"])
+        cxxflags(["-stdlib=libc++"])
+        ldflags(["-stdlib=libc++", "-Wl,-Bdynamic"])
+        user3d()
+        with filter("config:Release"):
+            optimize("Speed")

@@ -1,0 +1,8 @@
+Quand les deux methodes s'accordent :
+Elles s'accordent lorsque la tête est droite, et aussi pour une rotation de lacet autour de l'axe vertical : la droite de la tête reste parallèle à l'axe X du monde.
+
+Quand elles divergent :
+Au roulis de 30°, la droite de la tête est inclinée et les positions calculées diffèrent de 16,3 mm. Au lacet de 90°, la droite de la tête pointe selon Z et l'écart atteint 44,5 mm.
+
+Ce qu'un visiteur sentirait :
+Un œil décalé le long de l'axe X du monde reste horizontal malgré le roulis ou le lacet de la tête. Le décalage correct suit l'orientation, ce qui modifie la parallaxe et la profondeur perçue.

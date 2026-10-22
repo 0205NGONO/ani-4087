@@ -1,0 +1,16 @@
+L'ordre que rejoint la matrice :
+Le produit lacet*tangage rejoint la matrice RotationY(45°) * RotationX(30°) : les deux regards imprimés sont (-0.6124, 0.5000, -0.6124).
+
+L'ordre d'une tête :
+Pour une tête qui incline d'abord son regard puis tourne autour de l'axe vertical du monde, le lacet doit être appliqué après le tangage; l'ordre retenu est donc lacet*tangage.
+
+Comment je l'ai vérifié :
+Les trois regards sont calculés par le moteur et comparés à quatre décimales. Le regard tangage*lacet vaut (-0.7071, 0.3536, -0.6124), différent de celui des matrices.
+L'ordre qui convient :
+lacet*tangage donne le même regard que la construction par matrices. Le lacet autour de l'axe vertical du monde précède le tangage autour de l'axe X de la tête.
+
+L'ordre qui ne convient pas :
+tangage*lacet donne (-0.7071, 0.3536, -0.6124), au lieu de (-0.6124, 0.5000, -0.6124). Le tangage est appliqué dans le repère monde plutôt que dans le repère tourné de la tête.
+
+La vérification :
+Les deux méthodes correctes produisent le même regard; le produit dans l'ordre inverse donne une direction différente malgré une rotation valide.

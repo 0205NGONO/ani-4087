@@ -1,0 +1,1 @@
+À produire par deux-yeux.cpp après la capture et la comparaison réelles des deux paires d'images.

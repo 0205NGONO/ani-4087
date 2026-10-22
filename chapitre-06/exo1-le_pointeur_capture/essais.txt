@@ -1,0 +1,11 @@
+Avec CaptureMouse seul :
+Observation à compléter après l'essai sans ClipMouseToClient : CaptureMouse demande la capture au système, mais ne confine pas à lui seul le curseur dans la zone cliente.
+
+Ce qui le retient :
+Observation à compléter après l'essai avec ClipMouseToClient(true) : l'appel de confinement demande au système de garder le curseur dans la fenêtre.
+
+Deux appuis de suite :
+Observation à compléter en appuyant deux fois sur F1 puis une fois sur Échap. ShowMouse agit sur le compteur de visibilité du curseur ; deux appels de masquage peuvent demander plus d'un appel pour le réafficher.
+
+Fermeture sans relâcher :
+Observation à compléter après fermeture par la croix sans Échap. Ne pas considérer ce paragraphe comme une mesure effectuée : le comportement doit être observé sur la machine d'exécution.

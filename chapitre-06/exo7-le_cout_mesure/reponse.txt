@@ -1,0 +1,8 @@
+Le rapport :
+Le temps moyen Debug/Release est de 8,69 pour les matrices (661,686/76,159 ms) et de 4,53 pour les quaternions (125,648/27,760 ms). Le chemin matrices est 2,74 fois plus lent que le produit quaternion en Release.
+
+Le cout par image :
+En Release, une construction représente 76,2 ns par matrices et conversion, ou 27,8 ns par produit quaternion. Rapportés au budget de 11 ms à 90 images/s, cela représente respectivement 0,00069 % et 0,00025 %.
+
+Ce que je pense du choix :
+Les mesures confirment que la voie matricielle coûte davantage, mais une seule orientation par image utilise une part négligeable du budget dans les deux cas. Le choix du simulateur est donc acceptable pour une tête; le quaternion direct reste moins coûteux si le nombre de poses augmente.

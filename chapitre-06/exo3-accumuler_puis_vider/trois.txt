@@ -1,0 +1,1 @@
+À générer en lançant accumulation.cpp : déplacer la souris dans un seul sens, l'arrêter et copier au moins cinq lignes de la sortie après l'arrêt. Les relevés doivent provenir de l'exécution réelle.

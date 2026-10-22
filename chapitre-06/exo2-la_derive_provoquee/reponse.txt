@@ -1,0 +1,11 @@
+Ma sensibilité :
+La version fautive ajoute chaque image le dernier déplacement brut lu dans le module, multiplié par 0,0025 radian par compte.
+
+Vitesse de dérive :
+À calculer en degrés par seconde avec deux lignes de derive.txt éloignées de dix secondes : (lacet_final - lacet_initial) / (temps_final - temps_initial).
+
+D'où vient ce chiffre :
+Le module conserve le dernier delta brut non nul après l'arrêt de la souris. Le programme le relit et l'ajoute donc à chaque image; le nombre de comptes répétés par seconde dépend du rythme d'images de la machine.
+
+Pourquoi elle ne s'arrête pas :
+La colonne brut reste non nulle après que la souris a cessé de bouger. La version fautive traite cette valeur persistante comme un nouveau déplacement à chaque image.

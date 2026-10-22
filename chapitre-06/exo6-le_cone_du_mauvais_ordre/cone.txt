@@ -1,0 +1,8 @@
+Ce que fait le monde :
+La tête tourne autour de deux axes. Le lacet est autour de l'axe vertical du monde; le tangage incline le regard.
+
+Autour de quel axe :
+Dans l'ordre lacet*tangage, la hauteur du regard reste à 30° pour tous les lacets : le tangage tourne avec la tête et le cône est autour de l'axe vertical du monde.
+
+L'ordre fautif :
+tangage*lacet applique le tangage autour de l'axe X du monde après le lacet. La hauteur varie de +30° à -30° pendant le tour; ce n'est pas le mouvement d'une tête.

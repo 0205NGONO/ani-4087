@@ -1,0 +1,16 @@
+Pourquoi cette direction :
+La convention de la salle prend l'avant comme -Z. Le lacet positif autour de +Y envoie cet avant vers -X; le tangage positif autour de +X incline l'avant vers +Y.
+
+L'épreuve qui sait dire non :
+L'épreuve lacet 90, tangage 0 échoue quand le signe du lacet est inversé : elle attend (-1, 0, 0), mais obtient (1, 0, 0). Les deux autres cas sont conservés.
+
+Ce que la souris ne permettait pas :
+Le test pose directement l'orientation et rend un code de sortie reproductible sans fenêtre, périphérique ni intervention humaine. Une ligne « OK » seule ne remplacerait pas ce code.
+Pourquoi cette direction :
+La salle utilise un repère droitier, l'avant est -Z et le lacet tourne autour de +Y. À 90° de lacet, l'avant -Z devient -X. Le tangage autour de X ajoute sin(tangage) sur Y et réduit la composante avant à -cos(tangage) sur Z.
+
+L'épreuve qui sait dire non :
+Le test inverse le signe du lacet et échoue bien à 90° : il obtient +X au lieu de -X. Les deux autres poses restent correctes, ce qui montre que l'épreuve cible le signe du lacet.
+
+Ce que la souris ne permettait pas :
+La pose directe permet de tester l'orientation sans fenêtre, souris ni interaction manuelle, puis de faire échouer le programme avec son code de sortie en cas de régression.

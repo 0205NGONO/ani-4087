@@ -1,0 +1,8 @@
+Ce qui differe le plus :
+À compléter avec la zone de l'image la plus lumineuse dans difference.png, après vérification visuelle des captures oeil-gauche.png et oeil-droit.png.
+
+Pourquoi la :
+Le décalage latéral des caméras crée une parallaxe; la différence dépend de la profondeur et se concentre aux contours des objets proches.
+
+Ce que prouve le noir :
+Une différence noire indique que les images comparées sont identiques à la tolérance près. La vue oubliée doit être identique lorsque les deux caméras sont confondues, mais le noir ne prouve pas à lui seul que la scène a été rendue : deux captures uniformes seraient également noires.

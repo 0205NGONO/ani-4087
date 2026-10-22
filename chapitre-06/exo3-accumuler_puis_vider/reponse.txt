@@ -1,0 +1,11 @@
+Lecture du module :
+La première version relit le dernier delta brut conservé par NkInput à chaque image. Une valeur non nulle persiste après le mouvement et provoque la dérive.
+
+Accumule et vidé :
+Les événements bruts sont additionnés dans accumulatedX, l'accumulateur est consommé une fois par image, puis remis à zéro. Après l'arrêt, sa contribution devient nulle.
+
+Accumule sans vidage :
+L'accumulateur continue de contenir les événements passés. Le programme réapplique à chaque image toute la somme historique, d'où une rotation qui s'accélère.
+
+Ce que fait le vidage :
+Il retire les deltas déjà consommés; ainsi chaque événement ne contribue qu'une seule fois au lacet.
