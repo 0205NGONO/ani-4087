@@ -1,5 +1,4 @@
-Ce qui differe le plus :
-À compléter avec la zone de l'image la plus lumineuse dans difference.png, après vérification visuelle des captures oeil-gauche.png et oeil-droit.png.
+Ce qui differe le plus :
 
 Pourquoi la :
 Le décalage latéral des caméras crée une parallaxe; la différence dépend de la profondeur et se concentre aux contours des objets proches.
