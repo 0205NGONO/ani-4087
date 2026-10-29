@@ -1,0 +1,2 @@
+avec prediction : à mesurer sur 1000 images réelles, moyenne M deg, max X deg
+sans prediction : à mesurer sur les mêmes images, moyenne M deg, max X deg

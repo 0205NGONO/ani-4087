@@ -1,0 +1,5 @@
+budget 72 Hz : 13.889 ms
+budget 90 Hz : 11.111 ms
+budget 120 Hz : 8.333 ms
+ecran : moyenne 16.669845 ms, mediane 16.665950 ms, max 27.322600 ms
+sans attente : moyenne 8.332318 ms, mediane 7.514600 ms, max 15.807700 ms

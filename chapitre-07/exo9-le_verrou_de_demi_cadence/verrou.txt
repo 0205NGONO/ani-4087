@@ -1,0 +1,3 @@
+copies de la salle : à déterminer par mesure, jusqu’à dépasser la période de l’écran
+sans verrou : moyenne M ms, ecart type E ms, max X ms (1000 intervalles à mesurer)
+avec verrou : moyenne M ms, ecart type E ms, max X ms (1000 intervalles à mesurer)

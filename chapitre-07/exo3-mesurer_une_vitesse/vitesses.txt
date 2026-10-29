@@ -1,0 +1,23 @@
+serie programme :
+image 1 : dt = 13.888889 ms, vitesse = (0.000000, 30.000000, 0.000000) deg/s
+image 2 : dt = 13.888889 ms, vitesse = (0.000000, 30.000000, 0.000000) deg/s
+image 3 : dt = 13.888889 ms, vitesse = (0.000000, 30.000000, 0.000000) deg/s
+image 4 : dt = 13.888889 ms, vitesse = (0.000000, 30.000000, 0.000000) deg/s
+image 5 : dt = 13.888889 ms, vitesse = (0.000000, 30.000000, 0.000000) deg/s
+image 6 : dt = 13.888889 ms, vitesse = (0.000000, 30.000000, 0.000000) deg/s
+image 7 : dt = 13.888889 ms, vitesse = (0.000000, 30.000000, 0.000000) deg/s
+image 8 : dt = 13.888889 ms, vitesse = (0.000000, 30.000000, 0.000000) deg/s
+image 9 : dt = 13.888889 ms, vitesse = (0.000000, 30.000000, 0.000000) deg/s
+image 10 : dt = 13.888889 ms, vitesse = (0.000000, 30.000000, 0.000000) deg/s
+image 11 : dt = 13.888889 ms, vitesse = (0.000000, 30.000000, 0.000000) deg/s
+image 12 : dt = 13.888889 ms, vitesse = (0.000000, 30.000000, 0.000000) deg/s
+image 13 : dt = 13.888889 ms, vitesse = (0.000000, 30.000000, 0.000000) deg/s
+image 14 : dt = 13.888889 ms, vitesse = (0.000000, 30.000000, 0.000000) deg/s
+image 15 : dt = 13.888889 ms, vitesse = (0.000000, 30.000000, 0.000000) deg/s
+image 16 : dt = 13.888889 ms, vitesse = (0.000000, 30.000000, 0.000000) deg/s
+image 17 : dt = 13.888889 ms, vitesse = (0.000000, 30.000000, 0.000000) deg/s
+image 18 : dt = 13.888889 ms, vitesse = (0.000000, 30.000000, 0.000000) deg/s
+image 19 : dt = 13.888889 ms, vitesse = (0.000000, 30.000000, 0.000000) deg/s
+image 20 : dt = 13.888889 ms, vitesse = (0.000000, 30.000000, 0.000000) deg/s
+
+serie souris : 20 lignes à relever pendant une rotation réelle à la souris

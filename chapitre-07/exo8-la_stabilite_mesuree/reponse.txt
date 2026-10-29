@@ -1,0 +1,5 @@
+Le nombre qui compte : le nombre d’images qui dépassent le budget de 90 Hz, soit 11,111 ms, car chaque dépassement peut faire manquer une échéance.
+
+Pourquoi pas la moyenne : une moyenne peut masquer les pointes longues ; il faut la lire avec l’écart type, le maximum et le nombre d’images hors budget.
+
+Ce que l'écran change : à mesurer en comparant les deux séries ; la synchronisation peut imposer le rythme et modifier à la fois la durée moyenne et sa variabilité.

@@ -1,0 +1,5 @@
+Les deux écarts types : à compléter avec les deux séries de 1000 intervalles.
+
+Ce que coûte le verrou : comparer les cadences calculées comme 1000 / moyenne des intervalles.
+
+La décision du moteur : une demi-cadence stable peut être préférable à une cadence supérieure instable, car le compositeur peut se caler sur un rythme régulier. Un écran de bureau ne permet toutefois pas de mesurer la reprojection d’un casque.

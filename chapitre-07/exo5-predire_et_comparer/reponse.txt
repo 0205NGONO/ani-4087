@@ -1,0 +1,5 @@
+Le gain : à calculer comme moyenne sans prédiction divisée par moyenne avec prédiction, avec les mesures sur 1000 images.
+
+D'où vient l'erreur qui reste : le modèle suppose une vitesse constante pendant une période. Les accélérations et décélérations de la tête, le bruit de la souris et les variations d’intervalle entre images empêchent une extrapolation parfaite.
+
+Le facteur dix : à juger à partir du rapport mesuré ; ne pas généraliser à partir du seul geste de contrôle.

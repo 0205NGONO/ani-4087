@@ -1,0 +1,5 @@
+Où il gagne : sur les trois gestes progressifs, le modèle à accélération réduit moyenne et maximum. Pour le geste rapide, la moyenne passe de 0,214591 à 0,110703 deg et le maximum de 0,524651 à 0,269565 deg ; le geste lent et le demi-tour donnent la même tendance.
+
+Où il perd : sur l'arrêt brusque, le modèle à accélération a une erreur moyenne supérieure (0,051587 deg contre 0,039683 deg), même si son maximum est légèrement inférieur (1,166667 deg contre 1,333333 deg). Les deux critères ne donnent donc pas le même vainqueur.
+
+Pourquoi là : la différence finie sur trois poses estime l'accélération récente et la prolonge sur l'horizon. Après l'arrêt, cette accélération ne décrit plus le mouvement ; l'estimation faite juste avant l'arrêt persiste à tort.

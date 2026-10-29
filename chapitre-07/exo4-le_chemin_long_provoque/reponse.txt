@@ -1,0 +1,7 @@
+L'image fautive : image 649, au passage du lacet de 180 à 180,277778 deg, lorsque delta.w devient négatif.
+
+Le rapport : sans test, la vitesse fautive vaut -25900 deg/s contre 20 deg/s à l'image précédente, soit une valeur absolue 1295 fois plus grande et de sens opposé.
+
+Pourquoi à ce lacet : la conversion de la matrice en quaternion peut choisir l’autre représentant équivalent de la rotation. Le signe du produit scalaire relatif change alors brutalement près du passage par 180 degrés.
+
+Ce qu'aurait vu le casque : une extrapolation d’un tour presque complet dans le mauvais sens sur une seule image, suivie d’un retour à la pose correcte.

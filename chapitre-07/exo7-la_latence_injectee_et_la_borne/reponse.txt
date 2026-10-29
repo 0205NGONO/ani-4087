@@ -1,0 +1,5 @@
+Où elle cesse de rattraper : dans la plage testée (0 à 80 ms), la prédiction réduit encore l'erreur moyenne. À 80 ms, elle est de 3,127480 deg contre 9,692308 deg sans prédiction. Cette expérience ne permet donc pas d'affirmer qu'elle cesse de rattraper avant 80 ms.
+
+L'horizon sans borne : à t = 1,2 s, le tampon circulaire de 64 poses ne remonte qu'à 0,319444 s. L'horizon demandé est 894,444 ms ; la borne le ramène à 100 ms. Le geste n'ayant pas encore commencé à l'instant de l'échantillon, la vitesse mesurée est nulle dans les deux cas.
+
+Ce que verrait le casque : sans limite, une vitesse mesurée avant le geste est extrapolée sur un horizon très long ; la pose peut alors être très éloignée de la tête réelle. La borne limite cet emballement, sans pouvoir compenser une pose trop ancienne.

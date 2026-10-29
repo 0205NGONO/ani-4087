@@ -1,0 +1,5 @@
+La fréquence de mon écran : 60 Hz en 1920 × 1080, d’après Windows. La salle a été mesurée sous Vulkan sur cet écran, pas dans un casque.
+
+La cadence que je tiens : en mode synchronisé, la moyenne de 16.669845 ms correspond à environ 59.99 images/s. Elle ne tient donc pas le budget de 72 Hz (13.889 ms). Sans attente, la moyenne descend à 8.332318 ms, soit environ 120.02 images/s, mais cette mesure n’est pas une cadence d’affichage synchronisée.
+
+Ce que dit le maximum : le maximum synchronisé de 27.322600 ms dépasse le budget de 16.667 ms de mon écran à 60 Hz. La moyenne seule masquait donc des images ponctuellement trop longues, qui peuvent manquer une présentation.

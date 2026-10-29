@@ -1,0 +1,5 @@
+Ce qui est stable : pour chaque cadence, la période prédite vaut 1 000 / hz et l’instant prédit est maintenant + cette période. À 72 Hz, l’écart moyen réel - prédit mesuré sur 600 images est de 2.783880 ms ; cet écart dépend du rendu et de l’attente de présentation.
+
+Un divisé par la cadence : 60 Hz = 16.666667 ms ; 72 Hz = 13.888889 ms ; 90 Hz = 11.111111 ms ; 120 Hz = 8.333333 ms. Ces périodes correspondent aux quatre lignes mesurées dans instants.txt.
+
+La période de mon écran : Windows indique 60 Hz, soit 16.666667 ms. L’écart mesuré de 0.005494 ms à 60 Hz confirme que la période correspond au rafraîchissement de cet écran ; cette mesure ne décrit pas un casque.

@@ -1,0 +1,2 @@
+ecran : mesure de 60 s à faire dans la salle ; moyenne M ms, ecart type E ms, max X ms, hors budget H
+sans attente : mesure de 60 s à faire sous Vulkan avec NK_VK_MAILBOX=1 ; moyenne M ms, ecart type E ms, max X ms, hors budget H

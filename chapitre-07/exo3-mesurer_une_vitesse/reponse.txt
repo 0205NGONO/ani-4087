@@ -1,0 +1,5 @@
+La série programmée : la vitesse angulaire attendue est de 30 deg/s autour de Y ; exécuter le programme et vérifier les vingt valeurs.
+
+La série à la souris : à compléter après le relevé des vingt images.
+
+D'où vient le bruit : la souris apporte des deltas irréguliers et l’intervalle entre deux images varie. Une différence de poses divisée par un dt variable transforme ces deux variations en bruit de vitesse.

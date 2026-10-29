@@ -1,0 +1,5 @@
+Mes deux gestes : rapide, 90 degrés en 400 ms, et lent, 45 degrés en 1200 ms ; le demi-tour brusque dure 120 ms. Ces profils à départ et arrivée progressifs permettent de comparer une vitesse quasi constante avec une forte accélération.
+
+Où elle aide le moins : le rapport est le plus élevé pendant le demi-tour brusque : l'erreur moyenne avec prédiction vaut 7,080034 deg contre 21,764463 deg sans, soit 0,325302 fois l'erreur sans prédiction. Elle aide aussi pendant ce geste, mais nettement moins que pendant les deux gestes progressifs.
+
+Pourquoi là : l'extrapolation suppose une vitesse constante sur toute la période suivante. Elle est exacte pour une rotation uniforme, mais suit avec retard une accélération ou un arrêt brusque.
