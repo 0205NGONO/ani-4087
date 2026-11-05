@@ -1,3 +1,3 @@
-copies de la salle : à déterminer par mesure, jusqu’à dépasser la période de l’écran
-sans verrou : moyenne M ms, ecart type E ms, max X ms (1000 intervalles à mesurer)
-avec verrou : moyenne M ms, ecart type E ms, max X ms (1000 intervalles à mesurer)
+copies de la salle : 400
+sans verrou : moyenne 16.726002 ms, ecart type 4.221034 ms, max 50.588300 ms
+avec verrou : moyenne 34.431210 ms, ecart type 0.553489 ms, max 43.603600 ms

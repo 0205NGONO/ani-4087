@@ -1,5 +1,5 @@
-Les deux écarts types : à compléter avec les deux séries de 1000 intervalles.
+Les deux écarts types : sans verrou, 4.221034 ms ; avec verrou, 0.553489 ms. Le verrou réduit fortement la dispersion mesurée, même si le maximum avec verrou (43.603600 ms) montre qu'un réveil tardif reste possible.
 
-Ce que coûte le verrou : comparer les cadences calculées comme 1000 / moyenne des intervalles.
+Ce que coûte le verrou : avec K = 400 copies, la moyenne sans verrou (16.726002 ms) dépasse légèrement la période de l'écran à 60 Hz (16.667 ms). Le verrou vise deux périodes, soit 33.333 ms ; la moyenne mesurée atteint 34.431210 ms. La cadence passe d'environ 59.78 à 29.04 images/s.
 
-La décision du moteur : une demi-cadence stable peut être préférable à une cadence supérieure instable, car le compositeur peut se caler sur un rythme régulier. Un écran de bureau ne permet toutefois pas de mesurer la reprojection d’un casque.
+La décision du moteur : avec la même charge de 400 copies dans les deux essais, le verrou réduit l'écart type mais coûte environ 30.74 images/s. K = 2000 n'a pas été retenu : son temps de rendu dépassait déjà la cible de deux périodes, donc le sommeil ne pouvait plus illustrer le coût du verrou. Ces mesures concernent le moniteur du poste, pas la reprojection ni le confort d'un casque.
