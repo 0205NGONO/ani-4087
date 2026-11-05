@@ -1,0 +1,15 @@
+Images paires et impaires : les trames impaires montrent la position courante (10, 30, 50, 70 mm) ; les trames paires relisent la position de la trame impaire precedente (10, 30, 50, 70 mm). Le saut alterne donc entre 20 mm et 0 mm : l'oeil voit un tremblement, pas un mouvement uniforme.
+
+Avec une seule image : 1 10 -
+2 20 10
+3 30 10
+4 40 10
+5 50 10
+6 60 10
+7 70 10
+8 80 10
+SAUT MIN 10
+SAUT MAX 10
+TREMBLE NON
+
+La bonne lecture : l'index de la derniere image relachee se lit apres ReleaseImage ; il designe alors l'image qui vient d'etre peinte.

@@ -1,0 +1,5 @@
+La relation : REUSSIES moins LIBERATIONS donne le nombre d'images qui restent empruntees. Un refus de second emprunt ne change pas ce nombre ; une trame BLOQUEE ne libere rien.
+
+Mes trois nombres : pendant la mesure d'une minute de la salle, refaite le 5 novembre depuis la racine du projet avec les nuanceurs copies, j'ai releve 3630 emprunts reussis, 0 refus et 3630 liberations. L'ecart est 0, donc aucune image ne restait empruntee a la fin ; premiere fuite : aucune.
+
+Le chemin qui fuit : dans le programme de simulation, la trame sortie emprunte une image puis quitte le chemin sans la rendre. C'est la premiere fuite (trame 5 de resultat.txt) ; dans la salle mesuree, chaque BeginFrame reussi a atteint Present puis EndFrame, donc ce chemin de sortie n'a pas ete observe.

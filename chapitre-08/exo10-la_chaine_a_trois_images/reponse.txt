@@ -1,0 +1,35 @@
+Mes trente lignes :
+trame 1 image 0
+trame 2 image 1
+trame 3 image 2
+trame 4 image 0
+trame 5 image 1
+trame 6 image 2
+trame 7 image 0
+trame 8 image 1
+trame 9 image 2
+trame 10 image 0
+trame 11 image 1
+trame 12 image 2
+trame 13 image 0
+trame 14 image 1
+trame 15 image 2
+trame 16 image 0
+trame 17 image 1
+trame 18 image 2
+trame 19 image 0
+trame 20 image 1
+trame 21 image 2
+trame 22 image 0
+trame 23 image 1
+trame 24 image 2
+trame 25 image 0
+trame 26 image 1
+trame 27 image 2
+trame 28 image 0
+trame 29 image 1
+trame 30 image 2
+
+Le minimum d'images : dans le modele, pour eviter tout conflit pendant L trames de lecture, il faut L + 1 images. Quand L vaut 2, deux images entrent en conflit sur quatre des six trames ; trois images n'en ont aucun. Pour L = 0, une image suffit.
+
+Sur le simulateur : la trace ci-dessus a ete refaite le 5 novembre en faisant tourner la salle depuis la racine du projet, nuanceurs presents. Elle suit une chaine de trois images modelisee par les indices 0, 1 et 2. Le kit expose la swapchain de fenetre, mais pas d'index de swapchain XR ; cette trace n'est donc pas une mesure d'un casque. Dans le simulateur de l'exercice, L vaut 0 : le cycle a trois images n'evite aucun conflit supplementaire par rapport a une seule image.
