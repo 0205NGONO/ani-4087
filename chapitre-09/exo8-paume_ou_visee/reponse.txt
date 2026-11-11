@@ -1,0 +1,5 @@
+La distance : 158 mm. Elle correspond a la distance euclidienne entre PAUME D et VISEE D sur la premiere tete : sqrt(50^2 + 150^2), arrondie au millimetre.
+
+L'angle : 0 degre entre les directions avant de la paume et de la visee dans ce simulateur, car leurs poses conservent toutes deux l'orientation de la tete. Sur un vrai casque, l'orientation de la main et celle de la visee peuvent differer, donc cet angle n'est pas necessairement nul.
+
+Pour pointer : la VISEE D est le bon choix : sa position est plus en avant et elle atteint l'objet 2, alors que la PAUME D saisit l'objet 1. La paume sert a tenir un objet, pas a le viser.

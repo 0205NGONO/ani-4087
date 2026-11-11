@@ -1,0 +1,5 @@
+Ce qui change : seule la table qui associe chaque usage a une commande est remplacee. Les actions, leur ordre et la detection des nouveaux appuis restent identiques.
+
+Aucun nom de bouton : le traitement commun consulte une correspondance par usage et ne depend d'aucune commande physique particuliere. Les commandes n'apparaissent que dans les donnees des tables.
+
+L'action inactive : si son usage est absent de la table, aucune commande ne peut declencher cette action. Le programme la signale comme INACTIVE et ne produit aucun appui pour elle.

@@ -1,0 +1,5 @@
+Décalage ou tête : le déplacement modifie le décalage du monde (ou du joueur), pas la pose suivie du casque. Le suivi garde ainsi la position réelle de la tête.
+
+Ce que la tête casserait : écrire le déplacement dans la pose de la tête mélangerait le mouvement artificiel et le suivi matériel. La prédiction utiliserait alors une pose qui ne correspond plus au mouvement mesuré et pourrait produire des erreurs ou des saccades.
+
+Les diagonales : deux axes valent simultanément 1, donc le déplacement vaut sqrt(2) fois le pas, soit environ 1,414 fois (41,4 % plus vite). Pour garder la même vitesse, il faut normaliser le vecteur du manche lorsqu'il est diagonal.
