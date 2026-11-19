@@ -1,0 +1,5 @@
+Ce que le simulateur dit : Il signale les fins de trame manquantes ou conditionnelles, ainsi que l'absence d'une chaîne d'œil dans la projection. Dans la sortie, il dit quelque chose pour les applications 2, 3 et 4.
+
+Ce qu'il tait : Il ne reprojette pas l'image et ne peut donc pas voir une pose relue trop tard, un instant incorrect ou un espace mal déclaré. Les applications 5 et 6 ont des symptômes visibles sur le casque, mais le simulateur reste muet.
+
+Plus sévère : Le simulateur doit aussi révéler les erreurs que le casque ou l'environnement d'essai ne rend pas évidentes. Par exemple, à l'application 6, il ne signale rien alors que le casque présente à la fois DE_TRAVERS et DECALE ; cette vérification précoce aide à identifier la faute avant l'essai sur matériel réel.

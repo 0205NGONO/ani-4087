@@ -1,0 +1,5 @@
+Le chemin fautif : Au troisième passage, le chemin C fait continue avant le End écrit en bas de la boucle. La trame reste ouverte. À l'image suivante, Wait et Begin sont refusés ; la version sans garde compte donc deux refus.
+
+Pourquoi le destructeur : La garde est créée juste après Begin et termine la trame à sa destruction. Elle couvre ainsi les sorties normales et le continue, sans devoir répéter l'appel à End dans chaque branche.
+
+Le return : Sans garde, return quitte la boucle sans appeler End et laisse la trame ouverte. Avec la garde, le destructeur appelle End avant la sortie ; la trame est fermée.
