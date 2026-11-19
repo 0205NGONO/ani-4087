@@ -1,0 +1,5 @@
+Négligeable : Non. Le déplacement moyen est de 5 mm et l'écart de lacet moyen est de 770 millièmes de degré, mais une image atteint 2,2 degrés. Sur 11 ms, cet écart n'est pas négligeable.
+
+Seuil : Pour dépasser 1 degré en 11 ms, il faut une vitesse strictement supérieure à 1 / 0,011 = 90,91 degrés par seconde (environ 91 degrés par seconde).
+
+Ce que corrige le compositeur : Il reçoit la pose qui a servi au rendu et reprojette l'image en fonction de la pose attendue à l'affichage. Il corrige ainsi le mouvement de la tête survenu entre le rendu et l'affichage.
